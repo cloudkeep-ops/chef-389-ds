@@ -1,0 +1,11 @@
+[General]
+FullMachineName= <%= node['389-ds']['setup']['general']['full_machine_name'] %>
+SuiteSpotUserID= <%= node['389-ds']['setup']['general']['suite_spot_user_id'] %>
+SuiteSpotGroup= <%= node['389-ds']['setup']['general']['suite_spot_group'] %>
+
+[slapd]
+ServerPort= <%= node['389-ds']['setup']['slapd']['port'] %>
+ServerIdentifier= <%= node['389-ds']['setup']['slapd']['identifier'] %>
+Suffix= <%= node['389-ds']['setup']['slapd']['suffix'] %>
+RootDN= <%= node['389-ds']['setup']['slapd']['root_dn'] %>
+RootDNPwd= <%= node['389-ds']['setup']['slapd']['root_dn_password'] %>

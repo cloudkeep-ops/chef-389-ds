@@ -1,0 +1,15 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: fedora-20
+
+suites:
+  - name: default
+    run_list:
+      - recipe[389-ds::server]
+    attributes:
